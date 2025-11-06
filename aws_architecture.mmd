@@ -1,0 +1,8 @@
+graph TD;
+    A["VPC"] --> B["Subnet"];
+    A --> C["Internet Gateway"];
+    B --> D["EC2 Instance"];
+    B --> E["RDS"];
+    C --> F["S3 Bucket"];
+    D --> G["Security Group"];
+    E --> G;
